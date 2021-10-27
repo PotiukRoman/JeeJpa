@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(name = "postContactServlet", value = "/postcontact")
+@WebServlet(name = "postContactServlet", value = "/POST/contacts")
 public class PostContactServlet extends HttpServlet {
     private String message;
 

@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(name = "putContactServlet", value = "/updateanycontactfieldbyid")
+@WebServlet(name = "putContactServlet", value = "/PUT/contacts")
 public class PutContactServlet extends HttpServlet {
     private String message;
 

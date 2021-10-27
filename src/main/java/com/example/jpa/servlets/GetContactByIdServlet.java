@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(name = "getContactByIdServlet", value = "/contacts/*")
+@WebServlet(name = "getContactByIdServlet", value = "/GET/contacts/*")
 public class GetContactByIdServlet extends HttpServlet {
     private String message;
 
@@ -23,7 +23,7 @@ public class GetContactByIdServlet extends HttpServlet {
     }
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws javax.servlet.ServletException, IOException  {
-        String idParam = request.getRequestURI().substring(27);
+        String idParam = request.getRequestURI().substring(31);
         System.out.println("idParam= "+idParam);
         int id = Integer.parseInt(idParam);
         PrintWriter writer = response.getWriter();

@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(name = "deleteContactByIdServlet", value = "/deletecontactbyid")
+@WebServlet(name = "deleteContactByIdServlet", value = "/DELETE/contacts")
 public class DeleteContactByIdServlet extends HttpServlet {
     private String message;
 

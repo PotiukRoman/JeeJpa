@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(name = "getAllContactsServlet", value = "/contacts")
+@WebServlet(name = "getAllContactsServlet", value = "/GET/contacts")
 public class GetAllContactsServlet extends HttpServlet {
     private String message;
 
